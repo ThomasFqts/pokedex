@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'pokemon';
+    src: url('font/Pokemon_Solid.ttf');
+}
+
+html {
+    background-color: #353334;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% auto;
+    width: 90%
+}
+
+header h1 {
+    font-family: pokemon, sans-serif;
+    color: #b7262f;
+    text-shadow: 
+        2px 2px 0 white,  /* Ombre en bas à droite */
+        -2px 2px 0 white, /* Ombre en bas à gauche */
+        2px -2px 0 white, /* Ombre en haut à droite */
+        -2px -2px 0 white; /* Ombre en haut à gauche */
+    font-size: 2rem;
+}
+
+section.formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2f34;
+    color: white;
+    gap: 2px;
+    width: 100%;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+#btn, #text {
+    background-color: #c5222b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5%;
+    font-size: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#contenair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c2f34;
+    padding: 2%;
+    border: 0.2rem solid;
+    border-radius: 1%;
+    margin-top: 2%;
+    width: 80%;
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #413f40;
+    width: 100%;
+    padding: 1%;
+}
+
+h1 {
+    font-family: pokemon;
+    color: #3b6f71;
+    text-shadow: 
+        2px 2px 0 white, 
+        -2px 2px 0 white,
+        2px -2px 0 white, 
+        -2px -2px 0 white; 
+    font-size: 1.8rem;
+    margin-bottom: 1%;
+}
+
+#bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #413f40;
+    padding: 1%;
+    gap: 1%;
+}
+
+#description {
+    width: 45%;
+    padding: 2%;
+}
+
+#image {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    padding: 2%;
+}
+
+#paragraphe {
+    background: linear-gradient(to right, #3b6f71,#2c2f34);
+    padding: 0.5rem;
+    border-radius: 5%;
+}
+
+p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+img {
+    background-color: #2f5555;
+    width: 100%;
+    max-width: 75%;
+    border-radius: 5%;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #top, #bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #description, #image {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    section.formulaire {
+        gap: 0.2rem;
+    }
+
+    #btn, #text {
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+
+    #contenair {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    img {
+        max-width: 90%;
+    }
+}
